@@ -8,30 +8,52 @@ This board was inspired by the [AFC-Lite project by xbst](https://github.com/xbs
 
 The Owl AFC-TC board is built to control up to **4 toolheads** and **4 independent filament changers**, each capable of handling **2 spools**, for a total of 8 spools in a fully automated, multi-material 3D printer.
 
----
+## Feature Highlights
 
-## Use Case
+- **Powerful MCU**  
+  Utilizes a high-performance 32-bit ARM Cortex-M7 STM32H723ZET6 microcontroller running at 550 MHz
 
-This board is designed for advanced 3D printing setups involving:
-- Multi-toolhead configurations
-- Automatic filament changers (boxturtle-style or custom)
-- CAN-based modular communication
-- Centralized I/O for distributed printer components
+- **Robust Power Management**  
+  Features a TPS51385 buck converter delivering a stable 5V output at up to 12A, ideal for powering Neopixels and other 5V peripherals.
 
-Its modular design enables high scalability and flexibility while minimizing wiring complexity in your printer.
+- **Firmware Update Options**  
+  Separated BOOT and RESET buttons allow firmware flashing via USB DFU or CAN using Katapult, offering flexible upgrade paths.
 
----
+- **Fan Outputs**  
+  - 2 × Fixed 24V fan outputs for always-on cooling  
+  - 3 × PWM-controlled fan outputs (3A each)  
+    - Two with selectable voltage (5V or 24V)  
+    - One fixed to 24V
 
-## Documentation and Files
+- **Temperature Sensing**  
+  - 2 × Thermistor inputs with optional PT1000 support, selectable via jumper.
 
-This repository includes:
-- KiCad project files (schematics and PCB)
-- Bill of materials (BOM)
-- 3D models and board previews
-- Example wiring diagrams
-- Klipper configuration examples
+- **Connectivity Options**  
+  - USB connection to Raspberry Pi  
+  - CANbus support (also functions as a U2C interface for Klipper)  
+  - 4 × main CANbus headers for toolhead connections  
+  - 2 × additional CANbus expansion headers  
+  - Onboard selectable termination resistor for proper CAN line termination
 
-Documentation will be expanded over time to include build guides, pinouts, and integration tutorials.
+- **Stepper and DC Motor Support**  
+  - 8 × TMC2209 stepper driver headers (24V) in UART mode for additional extruder steppers
+  - 8 × DRV8837 DC motor drivers (5V) for rewind motors
+
+- **RGB & Neopixel Outputs**  
+  - 4 × Buffered RGB/Neopixel headers using SN74LVC1G17 for signal stability  
+  - Each channel supports up to 5A (total 5V output across all channels limited to 12A)
+
+- **Sensor Inputs**  
+  The board features 32 dedicated endstop-style inputs, each with external pull-up resistors and an individual indicator LED for real-time debugging. These inputs are purpose-built for AFC system integration and can be used as follows:
+
+  - **8 × AFC Buffer Sensors** (4 units × 2 signals: `advance_pin` + `trailing_pin`)  
+  - **16 × AFC Stepper Sensors** (8 units × 2 signals: `prep` + `load`)  
+  - **4 × AFC Hub Sensors** (`switch_pin` for 4 hubs)  
+  - **4 × AFC Bypass Sensors** (`bypass` signal for 4 units)
+
+- **General I/O and I2C**  
+  - 9 × Additional GPIO outputs via header  
+  - 2 × I2C headers for expansion with temperature, humidity, or other I2C devices
 
 ---
 
