@@ -1,6 +1,6 @@
 # Owl AFC-TC Expansion Board
 
-![Owl AFC-TC Board Render](.blob/main/images/Owl%20AFC-TC_top.png)
+![Owl AFC-TC Board Render](./images/Owl%20AFC-TC_top.png)
 
 The **Owl AFC-TC** is an open-source expansion board for advanced multi-toolhead 3D printers running Klipper firmware. It is designed to support high-performance, modular printing systems with automatic filament changers and CAN-connected toolheads.
 
