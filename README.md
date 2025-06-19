@@ -13,7 +13,7 @@ The Owl AFC-TC board is built to control up to **4 toolheads** and **4 independe
 - **Powerful MCU**  
   Utilizes a high-performance 32-bit ARM Cortex-M7 STM32H723ZET6 microcontroller running at 550 MHz
 
-- **Powerful 5V rail**
+- **Powerful 5V buck converter**  
   On-board 5V buck converter allowing up to 12A output
 
 - **Stepper and DC Motor Support**  
