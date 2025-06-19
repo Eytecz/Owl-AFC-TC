@@ -17,7 +17,7 @@ The Owl AFC-TC board is built to control up to **4 toolheads** and **4 independe
   On-board 5V buck converter allowing up to 12A output
 
 - **Stepper and DC Motor Support**  
-  - 8× TMC2209 stepper driver headers (24V) in UART mode for additional extruder steppers
+  - 8× TMC2209 stepperstick headers (24V) in UART mode for additional extruder steppers
   - 8× DRV8837 DC motor drivers (5V) for rewind motors
 
 - **Sensor Inputs**  
@@ -65,8 +65,8 @@ The Owl AFC-TC board is built to control up to **4 toolheads** and **4 independe
 | **CAN Termination**                 | Onboard jumper-selectable 120Ω resistor                                     |
 | **USB Interface**                   | USB-C for Pi/PC communication and firmware updates                          |
 | **CAN-to-USB Mode**                 | Can function as a Klipper U2C (USB-to-CAN) bridge                           |
-| **GPIO Outputs**                    | 9 × Additional general-purpose outputs via header                           |
-| **Endstop Inputs**                  | 32 × Inputs with pullups + indicator LEDs                                   |                   |
+| **GPIO Outputs**                    | 9× Additional general-purpose outputs via header                           |
+| **Endstop Inputs**                  | 32× Inputs with pullups + indicator LEDs                                   |                   |
 | **Firmware Update Methods**         | DFU via USB or Katapult via CAN                                             |
 | **Board Dimensions**                | 168x89 mm                                                                   |
 
