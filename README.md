@@ -81,3 +81,14 @@ You may use, modify, and share the design for non-commercial purposes with prope
 
 For more information, see:  
 [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
+---
+
+## Contact
+
+For questions, feedback, or collaboration regarding the Owl AFC-TC board, feel free to reach out via Discord:
+
+[![Discord](https://img.shields.io/badge/Discord-Eytecz-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.com/)
+
+I'm active in various 3D printing and Klipper-related communities — don't hesitate to send a message!
