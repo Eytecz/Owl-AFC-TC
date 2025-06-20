@@ -71,7 +71,7 @@ The Owl AFC-TC board is built to control up to **4 toolheads** and **4 independe
 | **Board Dimensions**                | 168x89 mm                                                                   |
 
 
----
+
 
 ## License
 
@@ -83,7 +83,6 @@ For more information, see:
 [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
----
 
 ## Contact
 
